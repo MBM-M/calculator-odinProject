@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta chartset="utf-8">
+        <meta charset="utf-8">
         <title>Calculator</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <script src="calc.js" defer></script>
-        <div class="container"></div>
+        <div class="container">
+            <p id="display"></p>
+            <button id="one" onclick="addToDisplay(1)">1</button>
+            <button id="two" onclick="addToDisplay(2)">2</button>
+            <button id="three" onclick="addToDisplay(3)">3</button>
+            <button id="four" onclick="addToDisplay(4)">4</button>
+            <button id="five" onclick="addToDisplay(5)">5</button>
+            <button id="six" onclick="addToDisplay(6)">6</button>
+            <button id="seven" onclick="addToDisplay(7)">7</button>
+            <button id="eight" onclick="addToDisplay(8)">8</button>
+            <button id="nine" onclick="addToDisplay(9)">9</button>
+            <button id="zero" onclick="addToDisplay(0)">0</button>
+            <button id="add" onclick="setOperator('+')">+</button>
+            <button id="subtract" onclick="setOperator('-')">-</button>
+            <button id="multiply" onclick="setOperator('*')">*</button>
+            <button id="divide" onclick="setOperator('/')">/</button>
+            <button id="equals" onclick="calculate()">=</button>
+            <button id="clear" onclick="clearDisplay()">ce</button>
+        </div>
     </body>
 </html>
